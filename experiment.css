@@ -1,13 +1,18 @@
+html,
+body{
+    min-width: 660px ;
+}
 .wrapper{
     overflow-x: hidden;
-
 }
 
 .wrapper .left
 {
-    background-color :#fff7ec;;
- 
-}
+    background-color :#fff7ec;
+    height: 50%;
+  }
+    
+
 
 .wrapper .right
 {
@@ -22,19 +27,20 @@
     {
         width: 100%;
         height: 50vh;
+    
     }
     img
     {
         margin-left: auto;
         margin-right: auto;
         display: block;
-        transform: translateX(0px);
-        transform: translateY(75px);
+        transform: translateY(35px);
         animation-name:lightSpeedInLeft;
         animation-duration: 2s;
-        top: 100px;
-        height:50%;
-        width: 50%;
+        position: relative;
+        top: 0px;
+        height:70%;
+        width: 30%;
     }
 
      /* font styling */
@@ -67,14 +73,16 @@ h6{
 	align-items: center;
     transform: translateY(-30%);
     padding-top: 30%;
-    display: block;
+    
 }
+    
 
 .btn{
 
 	border-radius: 3px;
 	font-family: 'Poiret One', cursive;
 	width: 300px;
+
 } 
 .btn-primary{
 	background-color: #F05F44;
@@ -88,12 +96,19 @@ h6{
 .padding{
 	position: relative;
   text-align: center;
-  transform: translateY(-50%);
-  margin-bottom: 3px;
+    top: 70px;
+    margin-left: 140pt;
+
 }
 
-
-@media screen and (min-width:1200px) 
+@media screen and(max-width:660px)
+{ body{
+    min-width: none;
+    min-height: auto;
+}
+    
+}
+@media screen and (min-width:1200px)
 {
 
     .wrapper
@@ -109,5 +124,5 @@ h6{
         width: 50%;
         height: 100vh;
     }
-    
+
 }
