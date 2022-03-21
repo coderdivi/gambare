@@ -101,10 +101,10 @@ h6{
 
 }
 
-@media screen and(max-width:660px)
+@media screen and(max-width:500px)
 { body{
     min-width: none;
-    min-height: auto;
+    min-height: 100%;
 }
     
 }
